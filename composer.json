@@ -1,0 +1,42 @@
+{
+    "name": "togu-inotek/websockets",
+    "version": "1.0.0",
+    "description": "Websockets",
+
+    "authors": [{ "name": "Togu Inovasi Teknologi", "email": "developer.togu@gmail.com" }],
+
+    "require": {
+
+        "beyondcode/laravel-websockets": "^2.0.0-beta.37",
+
+        "pusher/pusher-php-server": "^7.0"
+    },
+
+    "require-dev": {},
+
+    "autoload": {
+
+        "psr-4": {
+
+            "Hundredapps\\Websockets\\": "src/"
+        }
+    },
+
+    "autoload-dev": {},
+
+    "extra": {
+
+        "laravel": {
+
+            "dont-discover": [
+
+                "beyondcode/laravel-websockets"
+            ],
+
+            "providers": [
+
+                "Hundredapps\\Websockets\\WebsocketsServiceProvider"
+            ]
+        }
+    }
+}
